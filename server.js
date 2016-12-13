@@ -52,4 +52,9 @@ app.get('/success', function (req, res){
   }
 });
 
+app.get('/logout', function (req, res) {
+  req.logout();
+  res.send('Logged out!');
+});
+
 app.listen(8000);
